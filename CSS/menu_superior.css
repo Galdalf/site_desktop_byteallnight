@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu_superior_centralizado{
+	position: relative;
+	margin: auto;
+	width: auto;
+	background-color: #007400;
+}
+
+#menu_superior {
+	position: relative;
+	margin: auto;
+	color: #d0d0d0d0;
+	font-family: "Verdana", sans-serif;
+	font-size: 14px;
+	display: table;
+	/*nao permite que conteudo com float vaze da div. Com esta tecnica o background do ul nao
+	aparece, nao sei o motivo. A tecnica alternativa usa height*/
+}
+
+#menu_superior li {
+	float: left;
+}
+
+#menu_superior li a {
+	display: block;
+	line-height: 35px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 3;
+	padding-top: 3;
+	color: #cccccc;
+	text-decoration: none;
+}
+
+#menu_superior li:hover a {
+	background: #b0b0b0;
+	color: #fae1fa;
+}
+
+#menu_superior li ul {
+	background: #333333;
+	display: none;
+	position: absolute;
+	width: 225px;
+	z-index: 200;
+}
+
+#menu_superior li:hover ul {
+	display: block;
+}
+
+#menu_superior li li {
+	float: none;
+}
+
+#menu_superior li:hover li a {
+	background: none;
+}
+
+#menu_superior li ul a {
+	font-size: 14px;
+	text-align: left;
+}
+
+#menu_superior li ul a:hover {
+	background: #b0b0b0;
+	color: #ffffff;
+}
